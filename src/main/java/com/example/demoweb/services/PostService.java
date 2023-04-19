@@ -8,8 +8,12 @@ import java.util.List;
 
 @Service
 public class PostService {
+    List<Post> postList = new ArrayList<>();
     public List<Post> listAllPosts(){
-        List<Post> postList = new ArrayList<>();
         return postList;
+    }
+
+    public void addPosts(Post post){
+        postList.add(post);
     }
 }
